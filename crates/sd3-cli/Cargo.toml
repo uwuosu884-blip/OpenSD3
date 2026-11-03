@@ -1,0 +1,15 @@
+[package]
+name = "sd3-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "CLI inspector, forensic binary probe, TTFS unpacker, WAV/SFZ extractor, and MIDI renderer for Superior Drummer 3 libraries"
+
+[[bin]]
+name = "sd3tool"
+path = "src/main.rs"
+
+[dependencies]
+sd3-core.workspace = true
+sd3-dsp.workspace = true
+serde_json.workspace = true

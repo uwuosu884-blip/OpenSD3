@@ -1,0 +1,12 @@
+[package]
+name = "sd3-dsp"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Real-time allocation-free polyphonic multi-mic drum sampler engine for open-sd3"
+
+[dependencies]
+sd3-core.workspace = true
+memmap2.workspace = true
+serde_json.workspace = true
+crossbeam-channel.workspace = true

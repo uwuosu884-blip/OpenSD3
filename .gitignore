@@ -1,0 +1,17 @@
+/target/
+/dist-linux/
+**/*.rs.bk
+*.vst3/
+*.clap
+*.exe
+*.tar.gz
+*.zip
+*.obw
+*.oidx
+*.ttpw
+*.ttfs
+*.wav
+probe-*.json
+__pycache__/
+*.pyc
+.DS_Store

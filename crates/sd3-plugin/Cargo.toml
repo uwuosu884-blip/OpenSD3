@@ -1,0 +1,27 @@
+[package]
+name = "open-sd3"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "OpenSD3: Native Windows & Linux VST3, CLAP & Standalone multi-mic drum workstation for Superior Drummer 3 (SL-* / .obw) & SFZ soundbanks"
+
+[lib]
+name = "open_sd3"
+crate-type = ["cdylib", "lib"]
+
+[[bin]]
+name = "open-sd3"
+path = "src/main.rs"
+
+[dependencies]
+sd3-core.workspace = true
+sd3-dsp.workspace = true
+nih_plug.workspace = true
+nih_plug_egui.workspace = true
+crossbeam-channel.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[target.'cfg(target_os = "windows")'.dependencies]
+# Ensures baseview's Win32 child HWND calls SetFocus(hwnd) when egui widgets request keyboard/IME focus inside DAW VST3 hosts.
+egui-baseview = { git = "https://github.com/BillyDM/egui-baseview.git", rev = "ec70c3fe6b2f070dcacbc22924431edbe24bd1c0", default-features = false, features = ["windows_keyboard_workaround"] }
