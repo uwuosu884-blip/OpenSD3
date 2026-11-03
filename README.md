@@ -2,7 +2,7 @@
 
 **OpenSD3** is an open-source clean-room format specification, multi-language developer SDK (**Rust**, **C99/C++17**, **Python 3**), lossless sample/groove CLI toolkit (`sd3tool`), and native **Windows 10/11 & Linux VST3 / CLAP / Standalone** drum workstation (`open-sd3`) for **Toontrack Superior Drummer 3 / SDX / EZX** soundbanks (`SL-*`, `SL/<ROOM>`, `EZX*`, `.obw` `'ttbw'`, `'oidx'`, 20-bit `'ttpw'`, 24-bit `'tpc'`, `.ttfs`).
 
-> **Goal for Plugin Developers**: Anyone building their own drum sampler, converter, groove tool, or VST3/CLAP/AU plugin can use our byte-exact specification, drop-in Rust crates (`sd3-core`, `sd3-dsp`), or zero-dependency single-header C/C++ library (`sdk/c/opensd3.h`) to **skip 100% of binary reverse engineering** and focus straight on DSP and UI.
+**Goal for Plugin Developers**: Anyone building their own drum sampler, converter, groove tool, or VST3/CLAP/AU plugin can use our byte-exact specification, drop-in Rust crates (`sd3-core`, `sd3-dsp`), or zero-dependency single-header C/C++ library (`sdk/c/opensd3.h`) to **skip 100% of binary reverse engineering** and focus straight on DSP and UI.
 
 ---
 
